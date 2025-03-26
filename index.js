@@ -31,7 +31,7 @@ let randVal = Math.ceil(Math. random() * ((inspQuotes.length -1) - 0) + 0);
 
 
 //          Variables
-const server = "http://localhost:3000/messages";
+const server = "https://1a303fa835f5fc.lhr.life/messages";
 
 //          create message
 let messageFormat = (firstLetter, Username, message)=>{
