@@ -74,7 +74,7 @@ function submitRant(){
         method: "POST",
         headers: {"Content-type": "application/js"},
         body: JSON.stringify(rant),
-    })
+    }).then(()=>{location.reload();});
 
 }
 
