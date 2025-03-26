@@ -31,7 +31,7 @@ json-server --watch db.json --port 3000
 The server will be available at:
 http://localhost:3000/messages
 
-4️⃣ Open the Project
+4. Open the Project
 Simply open index.html in your browser.
 
 📜 Project Structure
@@ -66,9 +66,9 @@ JSON Server not running? Make sure you’ve started the server using json-server
 Rants not displaying? Check the browser console (F12 → Console) for errors.
 
 📌 Future Enhancements
-🔹 Add timestamps to rants
-🔹 Implement like/upvote system
-🔹 Enable real-time updates using WebSockets
+1. Add timestamps to rants
+2. Implement like/upvote system
+3. Enable real-time updates using WebSockets
 
 📄 License
 This project is open-source under the MIT License. Feel free to modify and use it!

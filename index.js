@@ -3,6 +3,32 @@ const Container = document.getElementById("rants-container");
 const username = document.getElementById("usernameInput");
 const Rant = document.getElementById("rantInput");
 const submit = document.getElementById("postRant");
+const insp = document.getElementById("inspiration")
+
+const inspQuotes = [
+    "The whole world just seems to be plotting to ruin your day huh?",
+    "This just keeps getting better and better huh",
+    "So how's your day going?",
+    "Morning.",
+    "the usual?",
+    "what a day huh?",
+    "you gave it your all",
+    "My God Ikr?!",
+    "some people.",
+    "This sucks fr",
+    "after all that..",
+    "really testing your patience arent they",
+    "let it all out",
+    "I can already sense the frustration",
+    "what was THAT about?",
+    "lay it on me",
+    "Oh boy-",
+    "Let it rip."
+]
+
+let randVal = Math.ceil(Math. random() * ((inspQuotes.length -1) - 0) + 0); 
+
+
 
 //          Variables
 const server = "http://localhost:3000/messages";
@@ -23,6 +49,8 @@ let messageFormat = (firstLetter, Username, message)=>{
 
 //          Display messages
 addEventListener("DOMContentLoaded", ()=>{
+    console.log(randVal, inspQuotes.length);
+    insp.innerText = inspQuotes[randVal];
     (function displayMessages(){
         fetch(server)
         .then(data=>data.json())
