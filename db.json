@@ -51,6 +51,14 @@
     {
       "id": "cb8e",
       "message": "\n     <div class=\"rant\">\n        <div class=\"profile-pic\" style=\"background: #ff5733;\">A</div>\n        <div class=\"rant-content\">\n            <h3>alicia</h3>\n            <p>lol</p>\n        </div>\n    </div>\n    "
+    },
+    {
+      "id": "113c",
+      "message": "\n     <div class=\"rant\">\n        <div class=\"profile-pic\" style=\"background: #ff5733;\">I</div>\n        <div class=\"rant-content\">\n            <h3>ike</h3>\n            <p>Trial</p>\n        </div>\n    </div>\n    "
+    },
+    {
+      "id": "5d21",
+      "message": "\n     <div class=\"rant\">\n        <div class=\"profile-pic\" style=\"background: #ff5733;\">I</div>\n        <div class=\"rant-content\">\n            <h3>ike</h3>\n            <p>I'm losing my damn mind</p>\n        </div>\n    </div>\n    "
     }
   ]
 }

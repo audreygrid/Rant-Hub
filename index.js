@@ -72,7 +72,7 @@ function submitRant() {
 
     fetch(server, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/js" },
         body: JSON.stringify(rant),
     })
     .then(response => {
