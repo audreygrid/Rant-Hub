@@ -65,18 +65,26 @@ addEventListener("DOMContentLoaded", ()=>{
 })
 
 //          Post message
-function submitRant(){
+function submitRant() {
     let firstLetter = (username.value.charAt(0)).toUpperCase();
-    let rant = {message: messageFormat(firstLetter, username.value, Rant.value)}
-    console.log(rant)
+    let rant = { message: messageFormat(firstLetter, username.value, Rant.value) };
+    console.log(rant);
 
     fetch(server, {
         method: "POST",
-        headers: {"Content-type": "application/js"},
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(rant),
     })
-    location.reload();
-
+    .then(response => {
+        if (response.ok) {
+            location.reload();
+        } else {
+            console.error("Error submitting rant:", response.status);
+        }
+    })
+    .catch(error => {
+        console.error("Network error:", error);
+    });
 }
 
 submit.addEventListener("click", submitRant);
